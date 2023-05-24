@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="demo()">Click</button> -->
+
+    <input placeholder="Enter name" id="username"/>
+    <input placeholder="Enter emailID" id="email"/>
+    <input type="radio" name="gender" id="gendermale" value="female">Female</input>
+    <input type="radio" name="gender" id="genderFemale" value="male">Male</input>
+    <button onclick="store()">Submit</button>
+    <script>
+        // function demo(){
+        // alert("On button click it appeared")
+        // }
+
+       function store(){
+        var gender;
+        var username=document.getElementById("username").value
+        var email=document.getElementById("email").value
+        var Male=document.getElementById("gendermale").checked
+        var Female=document.getElementById("genderFemale").checked
+        console.log(username)
+        console.log(email)
+        if(Male==true) 
+            gender="male"
+        else if(Female==true) 
+            gender="female"
+        console.log(gender)
+       }
+    </script>
+</body>
+</html>
+
+<!-- 
+onclick
+onchange
+onsubmit
+
+
+onkeypress
+onkeydown
+onkeyup
+onmouseover
+onmouseout -->
